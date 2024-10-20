@@ -24,14 +24,21 @@ body {
     flex-grow: 1;
     position: relative;
     overflow: hidden;
+<<<<<<< HEAD
     border-radius: 16px;
+=======
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
 }
 
 .block {
     width: 200px; /* Делает блоки адаптивными */
     height: auto; /* Установите желаемую высоту */
     border: 1px solid #000;
+<<<<<<< HEAD
     position: absolute; /* Меняем на relative */
+=======
+    position: relative; /* Меняем на relative */
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
     resize: both;
     overflow: hidden; /* Скрывает переполнение */
     background: white;
@@ -146,4 +153,11 @@ body {
 .diagramm-ico img {
     height: auto;
     width: 3vw;
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe

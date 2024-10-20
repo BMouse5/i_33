@@ -15,8 +15,11 @@
     <button type="submit">Загрузить</button>
 </form>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
 @if($errors->any())
     <div>
         <strong>Ошибка!</strong> {{ $errors->first() }}

@@ -19,7 +19,10 @@ class GenerationController extends Controller
     // Загрузка и обработка отчетов
     public function upload(Request $request)
     {
+<<<<<<< HEAD
         
+=======
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
         $request->validate([
             'report_file' => 'required|mimes:xls,xlsx,csv'
         ]);
@@ -28,7 +31,11 @@ class GenerationController extends Controller
 
         // Парсинг файла и анализ данных
         $analysisResults = $this->analyzeReport($filePath);
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
         return view('reports.analysis', compact('analysisResults'));
     }
 

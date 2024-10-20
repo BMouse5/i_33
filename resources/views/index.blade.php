@@ -623,4 +623,8 @@ document.getElementById('publish-report').addEventListener('click', function() {
 
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe

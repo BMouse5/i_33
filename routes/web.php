@@ -31,7 +31,11 @@ Route::post('/reports/generate-pdf', [GenerationController::class, 'generatePdf'
 
 
 Route::get('/upload-reports', [NewGenerationController::class, 'showUploadForm'])->name('upload.form');
+<<<<<<< HEAD
 Route::post('/upload-reports', [NewGenerationController::class, 'upload'])->name('report.upload');
+=======
+Route::post('/upload-reports', [NewGenerationController::class, 'upload'])->name('reports.upload');
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
 Route::get('/compare-reports', [NewGenerationController::class, 'compare'])->name('reports.compare');
 
 
@@ -41,8 +45,12 @@ Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('l
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
+<<<<<<< HEAD
 Route::get('/gantt', function(){
     return view('gant');
 });
+=======
+
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
 
 require __DIR__.'/auth.php';

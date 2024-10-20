@@ -1,9 +1,13 @@
+<<<<<<< HEAD
 @include('layouts.header')
+=======
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <meta name="csrf-token" content="{{ csrf_token() }}"> <!-- Здесь добавьте CSRF-токен -->
     <title>Отчеты</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
@@ -70,6 +74,80 @@
         #controls input {
             margin-right: 10px;
         }
+=======
+    <title>Отчеты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Основные стили */
+        #report-area {
+            border: 1px solid #ccc;
+            width: 80%;
+            height: 500px;
+            position: relative;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        /* Основные стили */
+body {
+    display: flex; /* Используем flexbox для основного контейнера */
+}
+
+#sidebar {
+    width: 20%; /* Фиксированная ширина боковой панели */
+    margin-right: 20px; /* Отступ между боковой панелью и областью отчета */
+}
+
+#report-area {
+    border: 1px solid #ccc;
+    height: 500px;
+    flex-grow: 1; /* Занимает оставшееся пространство */
+    position: relative;
+    overflow: hidden;
+}
+
+.block {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    position: absolute;
+    resize: both;
+    overflow: auto;
+    background: white;
+}
+
+.drag-handle {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    cursor: move;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 20px;
+}
+
+#sidebar .block {
+    position: relative;
+    margin-bottom: 10px;
+    cursor: grab;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+#controls {
+    display: none;
+    margin-bottom: 10px;
+}
+
+#controls input {
+    margin-right: 10px;
+}
+
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
     </style>
 </head>
 <body>
@@ -93,6 +171,7 @@
         </div>
     </div>
     <div id="page-controls">
+<<<<<<< HEAD
         <button onclick="addPage()">Добавить страницу</button>
         <select id="page-selector" onchange="switchPage()">
             <option value="page-1">Страница 1</option>
@@ -137,6 +216,15 @@
     </div>
 </form>
 @endauth
+=======
+    <button onclick="addPage()">Добавить страницу</button>
+    <select id="page-selector" onchange="switchPage()">
+        <option value="page-1">Страница 1</option>
+    </select>
+</div>
+    <div id="report-area" ondrop="dropNewBlock(event)" ondragover="allowDrop(event)"></div>
+    <button id="save-report">Сохранить отчет</button>
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
 
     <script>
         let selectedBlock = null;
@@ -489,7 +577,15 @@ function loadSavedChart(block, data) {
 }
 
 
+<<<<<<< HEAD
    
+=======
+    document.getElementById('save-report').addEventListener('click', function() {
+        saveCurrentPageState();
+        localStorage.setItem('report-pages', JSON.stringify(pages));
+        alert('Отчет сохранен!');
+    });
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
 
     // Загрузка сохраненного отчета при открытии
     window.addEventListener('load', function() {
@@ -499,6 +595,7 @@ function loadSavedChart(block, data) {
             loadPage(currentPage);
         }
     });
+<<<<<<< HEAD
 
     document.getElementById('download-images').addEventListener('click', function() {
         const reportArea = document.getElementById('report-area');
@@ -616,5 +713,9 @@ document.getElementById('publish-report').addEventListener('click', function() {
 
 
 
+=======
+    
+    </script>
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
 </body>
 </html>

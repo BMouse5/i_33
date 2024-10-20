@@ -2,9 +2,13 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\GanttController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\LinkController;
+=======
+
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,6 +23,7 @@ use App\Http\Controllers\LinkController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+<<<<<<< HEAD
 
 
 Route::get('/data', [GanttController::class ,'get']); 
@@ -27,3 +32,5 @@ Route::get('/data', [GanttController::class ,'get']);
 Route::resource('task', TaskController::class);
 Route::resource('link', LinkController::class);
 
+=======
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe

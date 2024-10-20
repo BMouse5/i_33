@@ -29,9 +29,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('upload.form')}}">Сравнение Двух</a>
                 </li>
+<<<<<<< HEAD
                 <li class="nav-item">
                     <a class="nav-link" href="/gantt">Диаграмма Ганта</a>
                 </li>
+=======
+>>>>>>> b7b53cc5a461793e0f850ee97aa4c854db3dcebe
                 @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">Вход</a>
