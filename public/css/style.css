@@ -11,9 +11,11 @@ body {
 }
 
 #sidebar {
-    width: 10vw; /* Изменено на vw для адаптивности */
+    width: 13vw; /* Изменено на vw для адаптивности */
     margin-right: 20px;
     overflow: hidden; /* Чтобы скрыть переполнение */
+    display: grid;
+    row-gap: 2vw;
 }
 
 #report-area {
@@ -41,7 +43,6 @@ body {
 .diagramms {
     resize:none;
     width: 100%;
-    border: 1px solid #000;
     height: 80px;
     display: flex;
     align-items:center;
@@ -127,6 +128,24 @@ body {
     font-size: 12px;
 }
 
+.diagramms span {
+    font-size: 1.5vw;
+    width: 80%;
+}
+
+.diagramm-ico {
+    max-width: 3vw;
+    height: 80px;
+    /* display: flex; */
+    align-items: center;
+    display: flex;
+    padding-left: 3px;
+}
+
+.diagramm-ico img {
+    height: auto;
+    width: 3vw;
+}
 
 
 

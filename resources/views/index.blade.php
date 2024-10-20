@@ -23,14 +23,54 @@
 <body>
     <div class="canvas-wrapp">
         <div id="sidebar">
-            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="pie"><span>Круговая диаграмма</span></div>
-            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="bar">Столбчатая диаграмма</div>
-            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="line">Линейная диаграмма</div>
-            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="histogram">Гистограмма</div>
-            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="radar">Радиальная диаграмма</div>
-            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="polar">Полярная диаграмма</div>
-            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="scatter">Облако точек</div>
-            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="text">Текстовый блок</div>
+            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="pie">
+                <div class="diagramm-ico">
+                    <img src="{{ asset('img/elipse.png') }}" alt="">
+                </div>
+                <span>Круговая диаграмма</span>
+            </div>
+            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="bar">
+                <div class="diagramm-ico">
+                    <img src="{{ asset('img/column.png') }}" alt="">
+                </div>
+                <span>Столбчатая диаграмма</span>
+            </div>
+            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="line">
+                <div class="diagramm-ico">
+                    <img src="{{ asset('img/line.png') }}" alt="">
+                </div>
+                <span>Линейная диаграмма</span>
+            </div>
+            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="histogram">
+                <div class="diagramm-ico">
+                    <img src="{{ asset('img/gistogramm.png') }}" alt="">
+                </div>
+                <span>Гистограмма</span>
+            </div>
+            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="radar">
+                <div class="diagramm-ico">
+                    <img src="{{ asset('img/radial2.png') }}" alt="">
+                </div>
+                <span>Радиальная диаграмма</span>
+            </div>
+            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="polar">
+                <div class="diagramm-ico">
+                    <img src="{{ asset('img/polar.png') }}" alt="">
+                </div>
+                <span>Полярная диаграмма</span>
+            </div>
+            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="scatter">
+                <div class="diagramm-ico">
+                    <img src="{{ asset('img/dots.png') }}" alt="">
+                </div>
+                <span>Облако точек</span>
+            </div>
+            <div class="diagramms" draggable="true" ondragstart="dragNewBlock(event)" data-type="text">
+                <div class="diagramm-ico">
+                    <img src="{{ asset('img/text.png') }}" alt="">
+                </div>
+                <span>Текстовый блок</span>
+            </div>
         </div>
         <div id="report-area" ondrop="dropNewBlock(event)" ondragover="allowDrop(event)"></div>
         <div id="controls">
